@@ -1,0 +1,44 @@
+package cz.petrsumbal.objects.pokemons;
+
+import cz.petrsumbal.objects.Pokemon;
+import cz.petrsumbal.objects.moves.chargedmoves.*;
+import cz.petrsumbal.objects.moves.fastmoves.ChargeBeam;
+import cz.petrsumbal.objects.moves.fastmoves.DragonBreath;
+import cz.petrsumbal.objects.moves.fastmoves.DragonTail;
+import cz.petrsumbal.objects.moves.fastmoves.FastMove;
+import cz.petrsumbal.objects.types.Dragon;
+import cz.petrsumbal.objects.types.Electric;
+import cz.petrsumbal.objects.types.Type;
+
+public class Zekrom extends Pokemon {
+    private String name = "zekrom";
+
+    private final int attack = setAttack(275);
+    private final int defence = setDefence(211);
+    private final int stamina = setStamina(205);
+    private final int hp = setHp(173);
+    private final int cp = calculateCP(attack,defence,stamina);
+
+    private FastMove[] fastMoves = new FastMove[] {new DragonBreath(), new ChargeBeam()};
+    private ChargedMove[] chargedMoves = new ChargedMove[] {new FlashCannon(), new WildCharge(), new Outrage(),
+            new Crunch()};
+
+
+    private final Type type1 = setType1(new Dragon());
+    private final Type type2 = setType2(new Electric());
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public FastMove[] getFastMoves() {
+        return fastMoves;
+    }
+
+    @Override
+    public ChargedMove[] getChargedMoves() {
+        return chargedMoves;
+    }
+}

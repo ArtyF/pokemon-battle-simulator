@@ -1,0 +1,2 @@
+get name u pokemona
+udelat metody utoceni

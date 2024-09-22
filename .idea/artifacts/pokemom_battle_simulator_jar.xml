@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="pokemom-battle-simulator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/pokemom_battle_simulator_jar</output-path>
+    <root id="archive" name="pokemom-battle-simulator.jar">
+      <element id="module-output" name="pokemom-battle-simulator" />
+    </root>
+  </artifact>
+</component>
